@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 import { useState } from "react";
 import Section from "./components/Section";
 import FeedbackOptions from "./components/FeedbackOptions";
@@ -32,6 +32,9 @@ function App() {
       case "bad":
         setBad((prevState) => prevState + 1);
         break;
+
+      default:
+        return;
     }
   };
 
